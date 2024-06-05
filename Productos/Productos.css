@@ -1,0 +1,255 @@
+/* Nav Bar */
+nav{
+    /* background-color: rgb(221, 74, 135); */
+    background-image: url(/img-propaganda/background\ nav.JPG);
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 5rem;
+    z-index: 3;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    left: 2%;
+    color: white;
+}
+
+#cosas{
+    font-size: large;
+    position: fixed;
+    left: 20%;
+}
+
+#cosas2{
+    font-size: large;
+    position: fixed;
+    left: 28%;
+}
+
+#star{
+    font-size: large;
+    position: fixed;
+    right: 17%;
+    color: rgb(230, 111, 137);
+}
+
+#regis{
+    font-size: large;
+    position: fixed;
+    right: 8%;
+    color: rgb(230, 111, 137);
+}
+
+#img-car{
+    height: 70%;
+    width: 5%;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    cursor: pointer;
+    color: rgb(230, 111, 137);
+}
+
+/* carrito */
+
+.cart{
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 0;
+    right: 0;
+    background-color: rgb(228, 195, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+}
+
+table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    height: 6rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+thead{
+    height: 2rem;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+#table-clear{
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgb(143, 33, 33);
+    font-weight: 700;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+#table-clear:hover{
+    background-color: rgb(121, 29, 29);
+}
+
+.show-cart{
+    height: 25rem;
+    padding: 1rem;
+}
+
+/* Productos */
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+
+body{
+    background-image: url(/img-productos/background-product.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+.swiper-slide{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(231, 120, 157);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i{
+    font-size: 20px;
+    color: rgb(105, 31, 31);
+}
+
+.icons img {
+    width: 120px;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: rgb(105, 31, 31);
+    font-weight: bold;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-txt p {
+    font-size: 14px;
+    color: rgb(87, 13, 13);
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cum{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid rgb(87, 13, 13);
+    border-radius: 25%;
+    color: rgb(87, 13, 13);
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/* Redes */
+
+#redes{
+    background-color: rgb(221, 74, 135);
+    padding: 1rem;
+    position: absolute;
+    top:118.4%;
+    left: 0;
+    right: 0;
+}
+
+#redes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    color: white;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.redes-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+}
+
+.redes-img{
+    height: 15%;
+    width:10%
+}
+
+@media (min-width: 640px){
+    .cart{
+        width: 50%;
+    }
+    #redes-container{
+        flex-direction: row;
+    }
+
+    .redes-div {
+        border: none;
+    }
+}

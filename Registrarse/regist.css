@@ -1,0 +1,249 @@
+body{
+    background-image: url(/img-propaganda//background\ regis.jpg);
+    background-size: cover;
+}
+
+nav{
+    background-image: url(/img-propaganda/background\ nav.JPG);
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 5rem;
+    z-index: 1;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    left: 2%;
+    color: white;
+    overflow: hidden;
+}
+
+#cosas{
+    font-size: large;
+    position: fixed;
+    left: 20%;
+}
+
+#cosas2{
+    font-size: large;
+    position: fixed;
+    left: 28%;
+}
+
+#star{
+    font-size: large;
+    position: fixed;
+    right: 17%;
+    color: rgb(230, 111, 137);
+}
+
+#regis{
+    font-size: large;
+    position: fixed;
+    right: 8%;
+    color: rgb(230, 111, 137);
+}
+
+#img-car{
+    height: 70%;
+    width: 5%;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    cursor: pointer;
+    color: rgb(230, 111, 137);
+}
+
+/* carrito */
+
+.cart{
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 0;
+    right: 0;
+    background-color: rgb(228, 195, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+}
+
+table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    height: 6rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+thead{
+    height: 2rem;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+#table-clear{
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgb(143, 33, 33);
+    font-weight: 700;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+#table-clear:hover{
+    background-color: rgb(121, 29, 29);
+}
+
+.show-cart{
+    height: 25rem;
+    padding: 1rem;
+    z-index: 4;
+}
+
+/* Registrarse */
+
+h2{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: rgb(221, 74, 135);
+    color: rgb(221, 74, 135);
+    border-radius: 5%;
+    height: 64%;
+    width: 40%;
+}
+
+h3{
+    position: absolute;
+    top: 20%;
+    left: 45.5%;
+    font-weight: 500;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* vainas de registro */
+
+    #div-regist1{
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        z-index: 3;
+    }
+    
+    #div-regist2{
+        position: absolute;
+        top: 40%;
+        left: 52.2%;
+        z-index: 3;
+    }
+    
+    #div-regist3{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        z-index: 3;
+    }
+    
+    #div-regist4{
+        position: absolute;
+        top: 50%;
+        left: 52.2%;
+        z-index: 3;
+    }
+    
+    #div-regist5{
+        position: absolute;
+        top: 60%;
+        left: 35%;
+        z-index: 3;
+    }
+
+    #div-regist6{
+        position: absolute;
+        top: 60%;
+        left: 52.2%;
+        z-index: 3;
+    }
+
+/* Fin de la vaina */
+
+#btn-regist{
+    background-color: rgb(92, 37, 37);
+    color: white;
+    height: 6%;
+    width: 30%;
+    position: absolute;
+    top: 78.5%;
+    left: 35%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Redes */
+
+#redes{
+    background-color: rgb(221, 74, 135);
+    padding: 1rem;
+    position: absolute;
+    top:95%;
+    left: 0;
+    right: 0;
+}
+
+#redes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    color: white;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.redes-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+}
+
+.redes-img{
+    height: 15%;
+    width:10%
+}
+
+@media (min-width: 640px){
+    .cart{
+        width: 50%;
+    }
+
+    #redes-container{
+        flex-direction: row;
+    }
+
+    .redes-div {
+        border: none;
+    }
+}

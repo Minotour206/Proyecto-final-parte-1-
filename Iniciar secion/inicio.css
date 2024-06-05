@@ -1,0 +1,208 @@
+body{
+    background-image: url(/img-propaganda/background.jpg);
+    background-size: cover;
+}
+
+nav{
+    background-image: url(/img-propaganda/background\ nav.JPG);
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 5rem;
+    z-index: 1;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    left: 2%;
+    color: white;
+    overflow: hidden;
+}
+
+#cosas{
+    font-size: large;
+    position: fixed;
+    left: 20%;
+}
+
+#cosas2{
+    font-size: large;
+    position: fixed;
+    left: 28%;
+}
+
+#star{
+    font-size: large;
+    position: fixed;
+    right: 17%;
+    color: rgb(230, 111, 137);
+}
+
+#regis{
+    font-size: large;
+    position: fixed;
+    right: 8%;
+    color: rgb(230, 111, 137);
+}
+
+#img-car{
+    height: 70%;
+    width: 5%;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    cursor: pointer;
+    color: rgb(230, 111, 137);
+}
+
+/* carrito */
+
+.cart{
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 0;
+    right: 0;
+    background-color: rgb(228, 195, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    transition: all 0.3s ease-in;
+}
+
+table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    height: 6rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+thead{
+    height: 2rem;
+    border-bottom: 1px solid rgb(168, 143, 163);
+}
+
+#table-clear{
+    cursor: pointer;
+    padding: 1rem;
+    background-color: rgb(143, 33, 33);
+    font-weight: 700;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+#table-clear:hover{
+    background-color: rgb(121, 29, 29);
+}
+
+.show-cart{
+    height: 25rem;
+    padding: 1rem;
+}
+
+/* Iniciar secion */
+
+#login{
+    position:absolute;
+    height: 55%;
+    width: 50%;
+    top: 30%;
+    left:25%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(221, 74, 135);
+    border-radius: 5%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    color: white;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+#iniciar{
+    position:absolute;
+    top: 85%;
+    height: 10%;
+    width: 80%;
+    border-radius: 2%;
+    background-color: rgba(109, 50, 50, 0.829);
+    cursor: pointer;
+}
+
+/* Redes */
+
+#redes{
+    background-color: rgb(221, 74, 135);
+    padding: 1rem;
+    position: absolute;
+    top:95%;
+    left: 0;
+    right: 0;
+}
+
+#redes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    color: white;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.redes-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+}
+
+.redes-img{
+    height: 15%;
+    width:10%
+}
+
+@media (min-width: 640px){
+    .cart{
+        width: 50%;
+    }
+
+    #redes-container{
+        flex-direction: row;
+    }
+
+    .redes-div {
+        border: none;
+    }
+}
